@@ -6,7 +6,7 @@ for page in range(0, 275, 25):
     req = requests.get(url)
     bsmovie = bs4.BeautifulSoup(req.text, 'html.parser')
     list = bsmovie.select('#content li')
-
+    print(list)
     for i in range(0, len(list)):
 
         # print(list[0])

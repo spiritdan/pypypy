@@ -28,7 +28,8 @@ def get_link(movie):
     # print(finallink)
     req = requests.get(finallink).content.decode('gbk')
     bsmovie2 = bs4.BeautifulSoup(req, 'html.parser')
-    movie_link = bsmovie2.select('.co_content8 table tbody  a')
+    movie_link = bsmovie2.select('table tbody tr td a')
+    print(movie_link)
     link = ''
     for i in range(0, len(movie_link)):
         # 延迟三秒，方式封IP

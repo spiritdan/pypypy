@@ -17,8 +17,9 @@ for i in range(1, 4):
     # print(data)
     r = requests.post(url, data=data, headers=headers)
     bs = bs4.BeautifulSoup(r.text, 'html.parser')
-    # print(r.text)
+    print(r.text)
     comment = bs.select('.main_con span')
+    #print(comment)
     for j in range(0, len(comment)):
         all_comment.append(spliter + '第' + str(i) + '页 第' + str(j + 1) + '条评论' + spliter + '\n' + comment[0].getText())
 

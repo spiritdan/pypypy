@@ -13,7 +13,7 @@ time.sleep(1)
 url = 'http://openapi.tuling123.com/openapi/api/v2'
 # 注册太麻烦，就用案例里的id和key了
 userid = str(random.randint(1, 1000000000000000000000))
-apikey = 'd81c0b99c260440980a140440be200ec'
+apikey = '16ed0d5c470c42f9b96600e6b6d499f7'
 
 
 # 超过1w有风险，19-01-19

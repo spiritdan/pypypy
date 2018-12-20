@@ -2,7 +2,7 @@ import requests,bs4
 #引用requests和bs4（BeautifulSoup4的缩写）,如果没有安装bs4，可以使用pip install beautifulsoup4下载。
 from urllib.request import quote
 #quote函数，可以帮我们把内容转为标准的url格式，作为网址的一部分打开。
-movie = '水形物语'
+movie = '创业时代'
 gbkmovie=movie.encode('gbk')
 #将汉字，用gbk格式编码，赋值给gbkmovie。
 urlmovie = 'http://s.ygdy8.com/plus/so.php?kwtype=0&searchtype=title&keyword='+quote(gbkmovie)
@@ -23,3 +23,4 @@ download = bsxiazai.select('table tbody tr a')
 #查找目标。
 for x in download:
     print (x.get('href'))
+print(len(download))
