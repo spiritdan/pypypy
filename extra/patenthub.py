@@ -5,7 +5,7 @@ url = 'https://www.patenthub.cn/user/login.json'
 headers = {'Host': 'www.patenthub.cn',
            'user-agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
            'Referer': 'https://www.patenthub.cn/user/login.html'}
-data = {'redirect_to':'https://www.patenthub.cn/','sso':'', 'account': '18068426375','password': '12ec0bc'}
+data = {'redirect_to':'https://www.patenthub.cn/','sso':'', 'account': '123','password': 'abc'}
 #记录session
 Soj_session = requests.session()
 res = Soj_session.post(url, data=data, headers=headers)
