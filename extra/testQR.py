@@ -15,6 +15,6 @@ myqr.run(
     #用以调节图片的对比度，1.0 表示原始图片，更小的值表示更低对比度，更大反之。默认为1.0。
     brightness=1.0,
     #用来调节图片的亮度，用法同上。
-    save_name='python.gif',
+    save_name='myqr.gif',
     #控制输出文件名，格式可以是 .jpg， .png ，.bmp ，.gif ；
 )

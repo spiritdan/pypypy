@@ -14,7 +14,7 @@ bsmovie = bs4.BeautifulSoup(res.text,'html.parser')
 link = bsmovie.select('.co_content8 b a')
 #查找目标。
 finallink = 'http://www.ygdy8.com' + link[0].get('href')
-#得到电影下载页的地址。 
+#得到电影下载页的地址。
 xiazai = requests.get(finallink).content.decode('gbk')
 #使用requests模块，拿到电影下载页的源代码。使用content方法，拿到bytes数据，再进行decode，此时xiazai是字符串。
 bsxiazai = bs4.BeautifulSoup(xiazai,'html.parser')
