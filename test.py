@@ -13,3 +13,12 @@ for i in words.split():
     else ' ')
     for x in range(-30, 30)]) for y in range(12, -12, -1)]))
     time.sleep(1.5)
+
+a=['aaaaa','nnnnnnn','cccccc']
+print('\n'.join(a))
+l=[x for x in range(70,0,-1)]
+print(l)
+print(l[: :-1])
+list=[None,None,1]
+
+
